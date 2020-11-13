@@ -17,14 +17,14 @@
 char c, save;
 
 int main(int argc, char* argv[]) {
-	printf("would you like to test one thing (s) or com to com (c) ");
+	printf("would you like to test audio/random messges(s) or rs232 (c)\n");
 	scanf_s("%c", &save, 1);
 
 
 	while ((c = getchar()) != '\n' && c != EOF) {}								// Flush other input
 
 	if (save == 's') {
-		Cases();
+		Messages();
 
 	}
 	if (save=='c') {

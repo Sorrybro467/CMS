@@ -24,9 +24,6 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cases.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mainrs232.c">
       <Filter>Source Files\week2rs232</Filter>
     </ClCompile>
@@ -37,6 +34,9 @@
       <Filter>Source Files\week 1</Filter>
     </ClCompile>
     <ClCompile Include="sound.c">
+      <Filter>Source Files\week 1</Filter>
+    </ClCompile>
+    <ClCompile Include="week1main.c">
       <Filter>Source Files\week 1</Filter>
     </ClCompile>
   </ItemGroup>

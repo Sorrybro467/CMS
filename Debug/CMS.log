@@ -1,7 +1,3 @@
-﻿  main.c
-C:\Users\selma\source\repos\CMS\CMS\main.c(27,8): warning C4013: 'Cases' undefined; assuming extern returning int
-C:\Users\selma\source\repos\CMS\CMS\main.c(31,12): warning C4013: 'mainrs232' undefined; assuming extern returning int
-  mainrs232.c
-  Generating Code...
+﻿  mainrs232.c
 C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(57): warning C4715: 'mainrs232': not all control paths return a value
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe
