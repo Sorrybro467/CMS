@@ -13,16 +13,31 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\week 1">
+      <UniqueIdentifier>{357cbda5-58fc-4a57-889a-149b27cd7201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\week2rs232">
+      <UniqueIdentifier>{9bc4e676-92f2-4173-ba88-8cafc21e4e7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="message.c">
+    <ClCompile Include="Cases.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mainrs232.c">
+      <Filter>Source Files\week2rs232</Filter>
+    </ClCompile>
+    <ClCompile Include="RS232Comm.c">
+      <Filter>Source Files\week2rs232</Filter>
+    </ClCompile>
+    <ClCompile Include="message.c">
+      <Filter>Source Files\week 1</Filter>
+    </ClCompile>
     <ClCompile Include="sound.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\week 1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -30,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RS232Comm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
