@@ -17,20 +17,20 @@
 char c, save;
 
 int main(int argc, char* argv[]) {
-	printf("would you like to test audio/random messges(s) or rs232 (c)\n");
+	printf("would you like to test audio/random messges (r) or rs232 (c)\n");
 	scanf_s("%c", &save, 1);
 
 
 	while ((c = getchar()) != '\n' && c != EOF) {}								// Flush other input
 
-	if (save == 's') {
+	if (save == 'r') {
 		Messages();
-
 	}
 	if (save=='c') {
 		mainrs232();
-
-
+	}
+	if (save=='s') {
+	Settings();
 	}
 
 	return(0);

@@ -1,3 +1,4 @@
 ﻿  mainrs232.c
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(57): warning C4715: 'mainrs232': not all control paths return a value
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(41,27): warning C4013: 'tempmsg' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(63): warning C4715: 'mainrs232': not all control paths return a value
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe

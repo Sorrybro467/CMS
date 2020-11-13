@@ -15,6 +15,8 @@
 FILE* fp;
 char str[MAXCHAR];
 
+char rndmsg[140];
+
 char newq[] = "%%\n";
 //char filename = "FortuneCookies.txt";
 
@@ -157,6 +159,18 @@ void AddToQueue(link pn) {			// add node to the end of the queue
 	pn->pNext = NULL;
 }
 
+char tempmsg() {				// remove head from queue
+	link pTemp;
+
+	if (pHead == NULL) return(NULL);
+
+	pTemp = pHead;
+	pHead = pHead->pNext;
+	//printf("\n %s", pTemp->Data.message);
+	rndmsg[140] = pTemp->Data.message;
+	return (rndmsg);
+}
+
 link DeQueue(void) {				// remove head from queue
 	link pTemp;					
 	
@@ -168,3 +182,6 @@ link DeQueue(void) {				// remove head from queue
 
 	return (pTemp);
 }
+
+
+
