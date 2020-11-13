@@ -15,6 +15,8 @@
 FILE* fp;
 char str[MAXCHAR];
 
+char rndmsg[140];
+
 char newq[] = "%%\n";
 //char filename = "FortuneCookies.txt";
 
@@ -136,7 +138,7 @@ int GetMessageFromFile(char* buff, int iLen, int randNum, int numQuotes, long in
 }
 
 
-// part 2
+// part 2 FIFO Queue
 
 void InitQueue(void) {						// no nodes, everything links to NULL
 	pHead = pTail = NULL;
@@ -168,3 +170,6 @@ link DeQueue(void) {				// remove head from queue
 
 	return (pTemp);
 }
+
+
+

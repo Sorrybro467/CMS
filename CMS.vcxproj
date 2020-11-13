@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Settings.c" />
     <ClCompile Include="week1main.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="mainrs232.c" />

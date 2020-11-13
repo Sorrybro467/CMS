@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "RS232Comm.h"
+#include "message.h"
 
 #define BUFSIZE 140
 
@@ -24,6 +25,7 @@ int nComRate = 9600;								// Baud (Bit) rate in bits/second
 int nComBits = 8;									// Number of bits per frame
 COMMTIMEOUTS timeout;								// A commtimeout struct variable
 
+char msgOut[140];
 
 int mainrs232() {
 
@@ -35,8 +37,16 @@ int mainrs232() {
 	Sleep(500);
 
 	// Transmit side 
-	char msgOut[] = "Hello";									// Sent message	
-	outputToPort(&hComTx, msgOut, strlen(msgOut)+1);			// Send string to port - include space for '\0' termination
+	//char msgOut[] = "Hello" ;									// Sent message	
+
+	//strcpy(msgOut, quote());
+
+	msgOut[140] = quote();
+	//char msgOut[] = { strcpy(msgOut, quote()) };
+	printf("\n\noutput: %s\n", msgOut);
+
+
+	outputToPort(&hComTx, msgOut, strlen(msgOut) + 1);			// Send string to port - include space for '\0' termination //
 	Sleep(500);													// Allow time for signal propagation on cable 
 
 	// Receive side  

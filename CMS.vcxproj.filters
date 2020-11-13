@@ -39,6 +39,9 @@
     <ClCompile Include="week1main.c">
       <Filter>Source Files\week 1</Filter>
     </ClCompile>
+    <ClCompile Include="Settings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="message.h">
