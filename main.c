@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 
 	}
 	if (save=='c') {
-		return(0);
+		mainrs232();
 
 
 	}

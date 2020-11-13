@@ -1,10 +1,7 @@
-﻿  mainrs232.c
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(43,15): warning C4101: 'timeout': unreferenced local variable
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(39,9): warning C4101: 'hComRx': unreferenced local variable
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(40,9): warning C4101: 'hComTx': unreferenced local variable
-  RS232Comm.c
-C:\Users\selma\source\repos\CMS\CMS\RS232Comm.c(97,7): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
-C:\Users\selma\source\repos\CMS\CMS\RS232Comm.c(97,3): warning C4024: 'CreateFileW': different types for formal and actual parameter 3
+﻿  main.c
+C:\Users\selma\source\repos\CMS\CMS\main.c(27,8): warning C4013: 'Cases' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\main.c(31,12): warning C4013: 'mainrs232' undefined; assuming extern returning int
+  mainrs232.c
   Generating Code...
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(45): warning C4716: 'mainrs232': must return a value
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(57): warning C4715: 'mainrs232': not all control paths return a value
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe
