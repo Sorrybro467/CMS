@@ -10,6 +10,25 @@
 #include <Windows.h>
 #include "message.h"
 #include "sound.h"
+#include <string.h>
+#include "RS232Comm.h"
+#include "Cases.h"
+
+
+// Declare constants, variables and communication parameters
+const int BUFSIZE = 140;							// Buffer size
+//setting up two virtual ports
+wchar_t COMPORT_Rx[] = L"COM7";						// COM port used for Rx (use L"COM6" for transmit program)
+wchar_t COMPORT_Tx[] = L"COM6";						// COM port used for Rx (use L"COM6" for transmit program)
+
+// Communication variables and parameters
+HANDLE hComRx;										// Pointer to the selected COM port (Receiver)
+HANDLE hComTx;										// Pointer to the selected COM port (Transmitter)
+int nComRate = 9600;								// Baud (Bit) rate in bits/second 
+int nComBits = 8;									// Number of bits per frame
+COMMTIMEOUTS timeout;								// A commtimeout struct variable
+
+
 
 
 int main(int argc, char* argv[]) {
@@ -33,6 +52,8 @@ int main(int argc, char* argv[]) {
 	char c;																// used to flush extra input
 	FILE* f;
 
+
+
 	do {
 		printf("What function would you like to use? \n r to record and play an audio message \n t to send a message \n c to close program\n > ");
 		scanf_s("%c", &save, 1);
@@ -40,58 +61,10 @@ int main(int argc, char* argv[]) {
 		
 		switch (save) {
 		case 'r':
-			// initialize playback and recording
-			InitializePlayback();
-			InitializeRecording();
+			caseR(iBigBuf, lBigBufSize, save,c, iBigBufNew); //replay,f,
 
-			// start recording
-			RecordBuffer(iBigBuf, lBigBufSize);
-			CloseRecording();
-
-			// playback recording 
-			printf("\nPlaying recording from buffer\n");
-			PlayBuffer(iBigBuf, lBigBufSize);
-			ClosePlayback();
-
-			// save audio recording  
-			printf("Would you like to save your audio recording? (y/n): ");
-			scanf_s("%c", &save, 1);
-			while ((c = getchar()) != '\n' && c != EOF) {}								// Flush other input
-			if ((save == 'y') || (save == 'Y')) {
-				/* Open input file */
-				fopen_s(&f, "C:\\myfiles\\recording.dat", "wb");
-				if (!f) {
-					printf("unable to open %s\n", "C:\\myfiles\\recording.dat");
-					return 0;
-				}
-				printf("Writing to sound file ...\n");
-				fwrite(iBigBuf, sizeof(short), lBigBufSize, f);
-				fclose(f);
-			}
-
-			// replay audio recording from file -- read and store in buffer, then use playback() to play it
-			printf("Would you like to replay the saved audio recording from the file? (y/n): ");
-			scanf_s("%c", &replay, 1);
-			while ((c = getchar()) != '\n' && c != EOF) {}								// Flush other input
-			if ((replay == 'y') || (replay == 'Y')) {
-				/* Open input file */
-				fopen_s(&f, "C:\\myfiles\\recording.dat", "rb");
-				if (!f) {
-					printf("unable to open %s\n", "C:\\myfiles\\recording.dat");
-					return 0;
-				}
-				printf("Reading from sound file ...\n");
-				fread(iBigBufNew, sizeof(short), lBigBufSize, f);				// Record to new buffer iBigBufNew
-				fclose(f);
-			}
-			InitializePlayback();
-			printf("\nPlaying recording from saved file ...\n");
-			PlayBuffer(iBigBufNew, lBigBufSize);
-			ClosePlayback();
-
-			printf("\n");
 			break;
-		
+			
 		// assignment 1 code to get message and add to queue
 		case 't':
 			numQuotes = fnumQuotes();									// Number of quotes
@@ -128,6 +101,8 @@ int main(int argc, char* argv[]) {
 			return 0;
 		} 
 	} while (save != 'c');
+
+
 
 	return(0);
 }

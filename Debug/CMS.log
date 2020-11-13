@@ -1,11 +1,22 @@
 ﻿  main.c
-C:\Users\selma\source\repos\CMS\CMS\main.c(104,20): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\selma\source\repos\CMS\CMS\main.c(20,6): warning C4101: 'result': unreferenced local variable
-C:\Users\selma\source\repos\CMS\CMS\main.c(19,7): warning C4101: 'testBuff': unreferenced local variable
-  message.c
-C:\Users\selma\source\repos\CMS\CMS\message.c(94,39): warning C4047: '>': 'long *' differs in levels of indirection from 'int'
-C:\Users\selma\source\repos\CMS\CMS\message.c(111,14): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
-C:\Users\selma\source\repos\CMS\CMS\message.c(120,22): warning C4018: '<': signed/unsigned mismatch
-  sound.c
+C:\Users\selma\source\repos\CMS\CMS\main.c(64,9): warning C4013: 'caseR' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\main.c(77,20): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\selma\source\repos\CMS\CMS\main.c(51,7): warning C4101: 'replay': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\main.c(39,6): warning C4101: 'result': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\main.c(38,7): warning C4101: 'testBuff': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\main.c(53,8): warning C4101: 'f': unreferenced local variable
+  caseR.c
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(17,32): warning C4042: 'iBigBuf': has bad storage class
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(17,57): warning C4042: 'lBigBufSize': has bad storage class
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(23,22): warning C4047: 'function': 'short *' differs in levels of indirection from 'short'
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(23,15): warning C4024: 'RecordBuffer': different types for formal and actual parameter 1
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(28,20): warning C4047: 'function': 'short *' differs in levels of indirection from 'short'
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(28,13): warning C4024: 'PlayBuffer': different types for formal and actual parameter 1
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(40,12): warning C4098: 'caseR': 'void' function returning a value
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(43,10): warning C4022: 'fwrite': pointer mismatch for actual parameter 1
+C:\Users\selma\source\repos\CMS\CMS\caseR.c(56,12): warning C4098: 'caseR': 'void' function returning a value
+  RS232Comm.c
+C:\Users\selma\source\repos\CMS\CMS\RS232Comm.c(97,7): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\selma\source\repos\CMS\CMS\RS232Comm.c(97,3): warning C4024: 'CreateFileW': different types for formal and actual parameter 3
   Generating Code...
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe

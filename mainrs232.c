@@ -1,7 +1,7 @@
 /* main.cpp - Client for the Tx/Rx Program
  * Author: Michael A. Galle
  *
- */
+ 
 
 #include <Windows.h>    
 #include <stdlib.h>
@@ -9,10 +9,13 @@
 #include <string.h>
 #include "RS232Comm.h"
 
+#define BUFSIZE 140
+
+int mainRS232() {
 // Note: Comment out the Tx or Rx sections below to operate in single sided mode
 
 // Declare constants, variables and communication parameters
-const int BUFSIZE = 140;							// Buffer size
+//int BUFSIZE = 140;							// Buffer size
 //setting up two virtual ports
 wchar_t COMPORT_Rx[] = L"COM7";						// COM port used for Rx (use L"COM6" for transmit program)
 wchar_t COMPORT_Tx[] = L"COM6";						// COM port used for Rx (use L"COM6" for transmit program)
@@ -22,10 +25,10 @@ HANDLE hComRx;										// Pointer to the selected COM port (Receiver)
 HANDLE hComTx;										// Pointer to the selected COM port (Transmitter)
 int nComRate = 9600;								// Baud (Bit) rate in bits/second 
 int nComBits = 8;									// Number of bits per frame
-COMMTIMEOUTS timeout;								// A commtimeout struct variable
+
 
  // The client - A testing main that calls the functions below
-int main() {
+
 
 	// Set up both sides of the comm link
 	initPort(&hComRx, COMPORT_Rx, nComRate, nComBits, timeout);	// Initialize the Rx port
@@ -54,3 +57,5 @@ int main() {
 	
 	system("pause");
 }
+
+*/
