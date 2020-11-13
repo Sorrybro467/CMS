@@ -24,12 +24,24 @@
     <ClCompile Include="sound.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mainrs232.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RS232Comm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cases.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="message.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RS232Comm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

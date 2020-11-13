@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cases.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="mainrs232.c" />
     <ClCompile Include="message.c" />
+    <ClCompile Include="RS232Comm.c" />
     <ClCompile Include="sound.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="message.h" />
+    <ClInclude Include="RS232Comm.h" />
     <ClInclude Include="sound.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

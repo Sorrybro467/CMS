@@ -1,11 +1,10 @@
-﻿  main.c
-C:\Users\selma\source\repos\CMS\CMS\main.c(104,20): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\selma\source\repos\CMS\CMS\main.c(20,6): warning C4101: 'result': unreferenced local variable
-C:\Users\selma\source\repos\CMS\CMS\main.c(19,7): warning C4101: 'testBuff': unreferenced local variable
-  message.c
-C:\Users\selma\source\repos\CMS\CMS\message.c(94,39): warning C4047: '>': 'long *' differs in levels of indirection from 'int'
-C:\Users\selma\source\repos\CMS\CMS\message.c(111,14): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
-C:\Users\selma\source\repos\CMS\CMS\message.c(120,22): warning C4018: '<': signed/unsigned mismatch
-  sound.c
+﻿  mainrs232.c
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(43,15): warning C4101: 'timeout': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(39,9): warning C4101: 'hComRx': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(40,9): warning C4101: 'hComTx': unreferenced local variable
+  RS232Comm.c
+C:\Users\selma\source\repos\CMS\CMS\RS232Comm.c(97,7): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\selma\source\repos\CMS\CMS\RS232Comm.c(97,3): warning C4024: 'CreateFileW': different types for formal and actual parameter 3
   Generating Code...
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(45): warning C4716: 'mainrs232': must return a value
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe
