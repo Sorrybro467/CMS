@@ -10,6 +10,7 @@
 #include <Windows.h>
 #include "message.h"
 #include "sound.h"
+<<<<<<< Updated upstream
 
 
 int main(int argc, char* argv[]) {
@@ -112,22 +113,34 @@ int main(int argc, char* argv[]) {
 				GetMessageFromFile(p->Data.message, MAX_QUOTE_LENGTH, frandNum(1, numQuotes), numQuotes, quoteIndices, quoteLengths);
 				AddToQueue(p);
 			}
+=======
+#include <string.h>
+#include "RS232Comm.h"
 
-			count = 1;
 
-			while (!isQueueEmpty()) {
-				printf("\n\nmessage %d: \n", count);
-				q = DeQueue();
-				count++;
-			}
+char c, save;
 
-			printf("\n\n");
-			break;
-		case 'c':
-			
-			return 0;
-		} 
-	} while (save != 'c');
 
+
+int main(int argc, char* argv[]) {
+	printf("would you like to test one thing (s) or com to com (c) ");
+	scanf_s("%c", &save, 1);
+>>>>>>> Stashed changes
+
+	while ((c = getchar()) != '\n' && c != EOF) {}								// Flush other input
+
+	if (save == 's') {
+		Cases();
+
+	}
+	if (save=='c') {
+		return(0);
+
+<<<<<<< Updated upstream
+=======
+	}
+
+
+>>>>>>> Stashed changes
 	return(0);
 }
