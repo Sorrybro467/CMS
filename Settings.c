@@ -16,10 +16,9 @@ int Settings(int SampleRate, int RecordTime, int BitRate, int COMPort, int RxID,
 		printf("would you like to edit Communications settigns? (C)\n ");
 		printf("would you like to exit? (E)\n ");
 		scanf_s("%c", &save1, 1);
-		while ((c = getchar()) != '\n' && c != EOF) {}								// Flush other input
+		while ((c = getchar()) != '\n' && c != EOF) {}	// Flush other input
 
-		switch (save1) {
-		case 'A':
+		if (save1=='A') {
 			printf("Would you like to change Recording time?(T)\n ");
 			printf("would you like to change Sample rate?(R)\n ");
 			printf("would you like to exit? (E)\n ");
@@ -40,8 +39,10 @@ int Settings(int SampleRate, int RecordTime, int BitRate, int COMPort, int RxID,
 			case 'E':
 				break;
 			}
-			break;
-		case 'C':
+
+
+		}
+		if (save1 == 'C') {
 			printf("Would you like to change Bitrate?(B)\n ");
 			printf("Would you like to change COM PORT?(C)\n ");
 			printf("Would you like to change RxID?(R)\n ");
@@ -82,9 +83,14 @@ int Settings(int SampleRate, int RecordTime, int BitRate, int COMPort, int RxID,
 				break;
 			}
 			break;
-		case 'E':
-			break;
+
 		}
+
+		if (save1 == 'E') {
+
+			return 0;
+		}
+		
 
 	} while (save1 != 'E');
 }

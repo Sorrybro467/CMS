@@ -138,7 +138,7 @@ int GetMessageFromFile(char* buff, int iLen, int randNum, int numQuotes, long in
 }
 
 
-// part 2
+// part 2 FIFO Queue
 
 void InitQueue(void) {						// no nodes, everything links to NULL
 	pHead = pTail = NULL;
@@ -157,18 +157,6 @@ void AddToQueue(link pn) {			// add node to the end of the queue
 		pTail = pn;
 	}
 	pn->pNext = NULL;
-}
-
-char tempmsg() {				// remove head from queue
-	link pTemp;
-
-	if (pHead == NULL) return(NULL);
-
-	pTemp = pHead;
-	pHead = pHead->pNext;
-	//printf("\n %s", pTemp->Data.message);
-	rndmsg[140] = pTemp->Data.message;
-	return (rndmsg);
 }
 
 link DeQueue(void) {				// remove head from queue

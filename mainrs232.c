@@ -25,6 +25,7 @@ int nComRate = 9600;								// Baud (Bit) rate in bits/second
 int nComBits = 8;									// Number of bits per frame
 COMMTIMEOUTS timeout;								// A commtimeout struct variable
 
+char msgOut[140];
 
 int mainrs232() {
 
@@ -38,8 +39,11 @@ int mainrs232() {
 	// Transmit side 
 	//char msgOut[] = "Hello" ;									// Sent message	
 
-	char msgOut[] = { tempmsg() };
-	printf("%s", msgOut);
+	//strcpy(msgOut, quote());
+
+	msgOut[140] = quote();
+	//char msgOut[] = { strcpy(msgOut, quote()) };
+	printf("\n\noutput: %s\n", msgOut);
 
 
 	outputToPort(&hComTx, msgOut, strlen(msgOut) + 1);			// Send string to port - include space for '\0' termination //

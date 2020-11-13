@@ -130,3 +130,24 @@ do {
 } while (save != 'c');
 
 }
+
+char quote() {
+	printf("in quote");
+
+	numQuotes = fnumQuotes();                                    // Number of quotes
+
+	quoteIndices = fquoteIndices(numQuotes);                    // Index locations of the quotes
+
+	quoteLengths = fquoteLength(numQuotes, quoteIndices);        // Length of each quote (up to MAX_QUOTE_LENGTH) - cut off after (140 chars)
+
+	// Get the random message from the file
+	srand(time(NULL));                    // Seed the random number generator
+
+	p = (link)malloc(sizeof(Node));
+
+	GetMessageFromFile(p->Data.message, MAX_QUOTE_LENGTH, frandNum(1, numQuotes), numQuotes, quoteIndices, quoteLengths);
+
+	printf("\nthe random msg was: %s\n", p->Data.message);
+
+	return p->Data.message;
+}

@@ -1,17 +1,39 @@
 ﻿  Settings.c
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(31,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(31,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(37,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(37,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(56,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(56,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(62,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(62,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(68,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(68,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(74,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(74,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(80,27): warning C4474: 'scanf_s' : too many arguments passed for format string
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(80,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-C:\Users\selma\source\repos\CMS\CMS\Settings.c(90): warning C4716: 'Settings': must return a value
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(30,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(30,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(36,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(36,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(57,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(57,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(63,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(63,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(69,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(69,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(75,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(75,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(81,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(81,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  mainrs232.c
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(44,21): warning C4013: 'quote' undefined; assuming extern returning int
+  message.c
+C:\Users\selma\source\repos\CMS\CMS\message.c(96,39): warning C4047: '>': 'long *' differs in levels of indirection from 'int'
+C:\Users\selma\source\repos\CMS\CMS\message.c(113,14): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\selma\source\repos\CMS\CMS\message.c(122,22): warning C4018: '<': signed/unsigned mismatch
+  week1main.c
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(42,21): warning C4013: 'InitializePlayback' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(43,22): warning C4013: 'InitializeRecording' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(46,15): warning C4013: 'RecordBuffer' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(47,17): warning C4013: 'CloseRecording' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(51,13): warning C4013: 'PlayBuffer' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(52,16): warning C4013: 'ClosePlayback' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(63,13): warning C4098: 'Messages': 'void' function returning a value
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(79,13): warning C4098: 'Messages': 'void' function returning a value
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(106,13): warning C4013: 'time' undefined; assuming extern returning int
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(127,11): warning C4098: 'Messages': 'void' function returning a value
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(21,5): warning C4101: 'result': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(20,6): warning C4101: 'testBuff': unreferenced local variable
+C:\Users\selma\source\repos\CMS\CMS\week1main.c(152,24): warning C4047: 'return': 'char' differs in levels of indirection from 'char [140]'
+  Generating Code...
+C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(67): warning C4715: 'mainrs232': not all control paths return a value
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(96): warning C4715: 'Settings': not all control paths return a value
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe
