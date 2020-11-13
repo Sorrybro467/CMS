@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cases.c" />
+    <ClCompile Include="week1main.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="mainrs232.c" />
     <ClCompile Include="message.c" />

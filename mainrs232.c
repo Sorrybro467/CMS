@@ -43,7 +43,7 @@ int mainrs232() {
 	char msgIn[BUFSIZE];
 	DWORD bytesRead;
 	bytesRead = inputFromPort(&hComRx, msgIn, BUFSIZE);			// Receive string from port
-	//printf("Length of received msg = %d", bytesRead);
+	printf("Length of received msg = %d", bytesRead);
 	msgIn[bytesRead] = '\0';
 	printf("\nMessage Received: %s\n\n", msgIn);				// Display message from port
 	

@@ -6,7 +6,7 @@
 
 
 
-void Cases() {
+void Messages() {
 int numQuotes;					// Number of quotes in the file
 long int* quoteIndices;			// Array of quote locations in the file (index correspondes to quote number)
 int* quoteLengths;				// Array of quote lengths (index correspondes to quote number)
@@ -77,11 +77,13 @@ do {
 			printf("Reading from sound file ...\n");
 			fread(iBigBufNew, sizeof(short), lBigBufSize, f);				// Record to new buffer iBigBufNew
 			fclose(f);
-		}
+			
 		InitializePlayback();
 		printf("\nPlaying recording from saved file ...\n");
 		PlayBuffer(iBigBufNew, lBigBufSize);
 		ClosePlayback();
+		}
+		
 
 		printf("\n");
 
