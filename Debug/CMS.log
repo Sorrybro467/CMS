@@ -1,4 +1,17 @@
-﻿  mainrs232.c
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(41,27): warning C4013: 'tempmsg' undefined; assuming extern returning int
-C:\Users\selma\source\repos\CMS\CMS\mainrs232.c(63): warning C4715: 'mainrs232': not all control paths return a value
+﻿  Settings.c
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(31,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(31,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(37,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(37,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(56,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(56,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(62,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(62,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(68,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(68,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(74,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(74,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(80,27): warning C4474: 'scanf_s' : too many arguments passed for format string
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(80,27): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\selma\source\repos\CMS\CMS\Settings.c(90): warning C4716: 'Settings': must return a value
   CMS.vcxproj -> C:\Users\selma\source\repos\CMS\Debug\CMS.exe
